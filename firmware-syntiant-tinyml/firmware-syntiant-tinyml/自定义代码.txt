@@ -1,0 +1,53 @@
+ // here you can write application code, e.g. to toggle LEDs based on keywords
+    if (strcmp(event, "turn on") == 0) 
+    {
+        if(turn_on_count==0)
+        {
+            turn_on_count=1;
+        }
+        if(turn_off_count==1)
+        {
+            turn_off_count=0;
+        }
+      
+        // Toggle LED
+        //digitalWrite(LED_RED, HIGH)
+    }
+
+    else if (strcmp(event, "turn off") == 0) 
+    {
+        if(turn_off_count==0)
+        {
+            turn_off_count=1;
+        }
+       if(turn_on_count==1)
+       {
+            turn_on_count=1;
+       }
+      
+        // Toggle LED
+        //digitalWrite(LED_GREEN, HIGH);
+    }
+     // here you can write application code, e.g. to toggle LEDs based on keywords
+    else if (strcmp(event, "red led") == 0) 
+    {
+        if(turn_on_count==1)
+        {
+            digitalWrite(LED_RED, HIGH);
+            turn_on_count=0;
+            turn_off_count=0;
+        }
+        // Toggle LED
+      
+    }
+
+    else if (strcmp(event, "green led") == 0) 
+    {
+        // Toggle LED
+         if(turn_on_count==1)
+         {
+            digitalWrite(LED_GREEN, HIGH);
+            turn_on_count=0;
+            turn_off_count=0;
+         }
+    }

@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\firmware-syntiant-tinyml",
+    "\\firmware-syntiant-tinyml\\src",
+    "\\firmware-syntiant-tinyml\\src\\model-parameters"
+  ],
+  "SelectedNode": "\\firmware-syntiant-tinyml\\src\\model-parameters\\model_variables.h",
+  "PreviewInSolutionExplorer": false
+}
